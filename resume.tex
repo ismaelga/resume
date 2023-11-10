@@ -62,8 +62,13 @@
     %{: #2 \vspace{-2pt}}
   }
 }
+\newcommand{\resumeItemSub}[1]{%2
+  \item[--]\small\textit{#1}
+}
+
 
 \newcommand{\sepsection}{\vspace{16pt}}
+
 
 
 \newcommand{\resumeSubheading}[4]{
@@ -123,7 +128,7 @@
   \href{mailto:me@ismaelga.com}{me@ismaelga.com} & 
   \href{https://github.com/ismaelga}{ \faicon{github} \color{urlcolor} ismaelga} \\
   & Porto, Portugal \\
-  \textsl{\small \latestVersion} & \faicon{code} Elixir, Phoenix, Elm, React, TypeScript, Ruby
+  \textsl{\small \latestVersion} & \faicon{code} Elixir, Ruby, TypeScript, Python
   
 \end{tabular*}
 % ---
@@ -133,68 +138,75 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Coinlever}{(remote) Portugal}
-      {Senior Software Engineer}{2021 - Jan 2023}
+      {Senior Software Engineer}{2021 - 2023}
       \resumeItemListStart
+        \resumeItemSub{Small team working on a privately owned platform to manage Crypto portfolios, connected to multiple exchanges to facilitate running tailored trading strategies}
         \resumeItem{
-        Worked on a platform that manages trading strategies in crypto trading, using elixir for it's ability to deal with concurrent work. \textbf{Elixir, Phoenix, Elm, Postgres}
-        }
+        Worked on the platform, fixing bugs, developed new features including integration of new exchanges \textbf{Elixir, Phoenix, Elm, Postgres, Fireblocks, GCP}}
+        \resumeItem{
+        Designed and implemented the architecture for a new system that leveraged AI based algorithms to automate portfolio management \textbf{Python, serverless, Dynamodb, AWS}}
         
       \resumeItemListEnd
 \sepsection
 
     \resumeSubheading
       {Glazed Developers}{(remote) Porto, Portugal}
-      {Senior Software Developer}{2015-2021}
+      {Senior Full-Stack Developer}{2015-2021}
 
       \resumeSubSubheading
-      {LVMH}{London/Paris 2018-2020}
+      {LVMH}{(remote) London/Paris 2018-2020}
       \resumeItemListStart
-        \resumeItem{Built an APP to manage copy for the chatbots, including translations. \textbf{Elixir, Phoenix, Absinthe, GraphQL}}
-        \resumeItem{Built a chatbot framework to be used for multiple brands inside LVMH, mainly for costumer service use cases \textbf{Typescript, NLP, IBM Watson, Nodejs, SQS}}
-        
-        \resumeItem{Built the front-end for a in-store customer care surveys, with offline capabilities. \textbf{React, Typescript}}
-        \resumeItem{Worked with DevOps team to design and implement automation for CI/CD. \textbf{Kubernetes, GitOps, AWS, Jenkins}}
+        \resumeItemSub{Worked on the group's digital department developing new technology solutions for luxury brands like, Rimowa, Guerlain, Fendi and Celine.}
+        \resumeItem{Designed and built a framework to reduce the time and effort implementing AI conversion assistants \textbf{Typescript, NLP, IBM Watson, Nodejs, SQS, AI}}
+        \resumeItem{Built conversation assistants for multiple LVMH's brands, for costumer services, recommendations, product discovery, ...}
+        \resumeItem{Built an APP to manage copy for the chatbots, including translations. \textbf{Elixir, Phoenix, GraphQL}}    
+        \resumeItem{Built the Front-end for in-store customer care surveys, with offline capabilities. \textbf{React, Typescript}}
+        \resumeItem{Worked with DevOps team to design and implement a new infra tailored for the needs including CI/CD. \textbf{Kubernetes, GitOps, AWS, Jenkins}}
+      \resumeItemListEnd
+
+      \resumeSubSubheading{\href{https://mercadao.pt}{Mercadão}}{Porto 2020}
+      \resumeItemListStart
+        \resumeItemSub{Grocery delivery Start-up bought by one of the biggest chain in Portugal}
+        \resumeItem{Maintenance work and fixed scaling issues. \textbf{AngularJS, IBM Loopback, MongoDB}}
       \resumeItemListEnd
 
       \resumeSubSubheading
-      {Mercadão}{Porto 2020}
+      {\href{https://wechangers.org}{WeChangers}}{Porto 2016-2017 and 2020-2021}
       \resumeItemListStart
-        \resumeItem{Changed the checkout flow, including the payment processor. \textbf{AngularJS, IBM Loopback, MongoDB}}
-      \resumeItemListEnd
-
-      \resumeSubSubheading
-      {WeChangers}{Porto 2016-2017 and 2020-2021}
-      \resumeItemListStart
-        \resumeItem{Built a platform for social changers to share their work and connections. \textbf{Ruby on Rails, Redis, React, Postgres, Azure}}
+        \resumeItemSub{Start-up building an online network for Social Impact people, organizations and projects, for example non-profit Orgs trying to solve water supply issues}
+        \resumeItem{Built the product and platform from scratch, including a lot of work on early on specification. \textbf{Ruby on Rails, Redis, React, Postgres, Azure}}
         \resumeItem{Mentored a Mid Software Developer. \textbf{Ruby on Rails, Redis, React, Postgres, Azure}}
         \resumeItem{Created tools for managing awards, challenges, contests, calls and grants. \textbf{TypeScript, React, Next.js}}
         \resumeItem{Participated in interviews to find candidates to work for Wechangers.}
       \resumeItemListEnd
       
       \resumeSubSubheading
-      {Farfetch}{Porto 2018}
+      {\href{https://farfetch.com/}{FARFETCH}}{Porto 2018}
       \resumeItemListStart
+        \resumeItemSub{Number 1 online marketplace for luxury fashion brands}
         \resumeItem{Built a white label version of their main e-commerce site for big brands that want to sell on their own website. \textbf{Nodejs, React, RethinkDB, Express.js, Flux, Redux}}
-        \resumeItem{Built a component blocks based custom page builder. \textbf{Nodejs, React, JSON schema}}
+        \resumeItem{Built a component blocks based custom page builder. Including maintainemce of the open-source library used for this, reaching 200 stars on github \textbf{Nodejs, React, JSON schema, \href{https://github.com/ismaelga/react-json-editor}{react-json-editor}}}
       \resumeItemListEnd
 
        
 
       \resumeSubSubheading
-      {QuickQuak Car wash}{CA, USA 2015}
+      {\href{https://www.dontdrivedirty.com}{QuickQuak Car wash}}{(remote) USA 2015}
       \resumeItemListStart
-        \resumeItem{Started the development of the API for the new POS system. \textbf{Ruby on Rails, Postgres}}
+        \resumeItemSub{Large USA based car wash chain with 200+ locations}
+        \resumeItem{Early development of the back-end API for their new POS system to be used on all their locations. \textbf{Ruby on Rails, Postgres, Digital Ocean}}
       \resumeItemListEnd
 
 \sepsection
 
 \resumeSubheading
-      {Nmusic - Software Developer}{Porto}
+      {\href{https://web.archive.org/web/20190811141419/http://www.nmusic.pt/}{Nmusic} - Software Developer}{Porto}
       {Backend Developer}{2014-2015}
       \resumeItemListStart
-      \resumeItem{Worked on the backend and content ingestion system of a music streaming service. \textbf{Ruby on Rails, Sinatra, Postgresql, Redis, ElasticSearch}}
-      \resumeItem{Built a "WAP" version of the service to allow 3G subscriptions and download of music, for usage on a few persian gulf countries. \textbf{Sinatra}}
-      \resumeItem{Developed a proof of concept music recomender system based on ElasticSearch scoring. \textbf{ElasticSearch, Rust}}
+      \resumeItemSub{Music streaming service, providing Meo Music for one of the largest Portuguese telecom companies, Meo (Altice group)}
+      \resumeItem{Worked on the back-end and content ingestion system. \textbf{Ruby on Rails,  Postgresql, Redis, ElasticSearch, Solr, AWS}}
+      \resumeItem{Built a "light" client version and allow 3G data subscriptions and download of music tracks. \textbf{Ruby, Sinatra}}
+      \resumeItem{Developed a proof of concept music recommender system based on ElasticSearch scoring. \textbf{ElasticSearch, Rust}}
       \resumeItemListEnd
 
 \sepsection
@@ -202,21 +214,24 @@
       {Waverise}{Porto}
       {Full-Stack Developer}{2013}
       \resumeItemListStart
-        \resumeItem{Developed a system for Human Resources management for the health industry. \textbf{Ruby, JS, }}
-        \resumeItem{Created a tweetwall with multiple channels of communication. \textbf{Ruby, JS}}
+        \resumeItemSub{Consultancy firm working mainly for London based clients.}
+        \resumeItem{Developed a system for Human Resources management for the health industry. Shifts and off-time management for medical personnel \textbf{Ruby, JavaScript, JQuery, Postgres, Resque}}
+        \resumeItem{Created a real-time interactions service, to be used in conferences, with multiple channels of communication, SMS, tweeter, Facebook, Email, HTTP API, ... \textbf{Ruby, JavaScript, Twillio}}
       \resumeItemListEnd
 \sepsection
 \resumeSubheading
       {Sinemys}{Porto}
-      {Rails Developer}{2012}
+      {Full-Stack Developer}{2012}
       \resumeItemListStart
-        \resumeItem{Developed a few wesites. \textbf{Ruby, JS, jQuery}}
-        \resumeItem{Automation of publishing course offerings in multiple sites. \textbf{Casper.js}}
+        \resumeItemSub{Start-up consultancy firm devoping parts of \href{https://www.bwizer.com/pt/}{Bwizer}'s marketing tools to promote their courses.}
+        \resumeItem{Developed some websites and built automation to post content in multiple online afvertising platforms. \textbf{Ruby, JavaScript, jQuery, Casper.js}}
       \resumeItemListEnd
 \resumeSubHeadingListEnd
 % \newpage
 
 % ---
+\phantom{TypeScript, Nodejs, React, Redux, Next.js, Nginx, Luadns, JWT, SOAP, NLP, GraphQL, TDD,  AWS(Lambda, S3, SQS), Azure, Google Cloud(GKE), Postgres, MongoDB, RethinkDB, Redis, ElasticSearch, Dynamodb, Ruby on Rails, Sinatra, Sidekiq, Python, OTP, Phoenix, Phoenix Liveview, GenStage, Oban, Postgres, MongoDB, RethinkDB, Redis, ElasticSearch, Dynamodb}
+
 
 \sepsection
 
@@ -249,26 +264,28 @@
 \sepsection
 
 % PROGRAMMING SKILLS
+
 \section{Other programming tools}
   \resumeSubHeadingListStart
-  
   
   \resumeSubItem{\textbf{Javascript} TypeScript, Nodejs, React, Redux, Next.js}
   
   \resumeSubItem{\textbf{Ruby} Ruby on Rails, Sinatra, Sidekiq}
-
+  
   \resumeSubItem{\textbf{Elixir:} OTP, Phoenix, Phoenix Liveview, GenStage, Oban}
-    
+  
   \resumeSubItem{\textbf{DBs:} Postgres, MongoDB, RethinkDB, Redis, ElasticSearch, Dynamodb}
   
-  \resumeSubItem{\textbf{Cloud services:} AWS(Lambda, S3, SQS, DynamoDB), Azure, Google Cloud(GKE)}
+  \resumeSubItem{\textbf{Cloud services:} AWS(Lambda, S3, SQS), Azure, Google Cloud(GKE)}
   
   \resumeSubItem{\textbf{Other tools:} Nginx, Luadns, JWT, SOAP, NLP, GraphQL, TDD}
   
-  \resumeSubItem{\textbf{Familiar Languages:} Elm, ReasonML, Go}
+  \resumeSubItem{\textbf{Familiar Languages:} Elm, ReasonML, Go, Rust}
 
+  \resumeSubItem{\textbf{Tools:} Slack, Jira, Linux, MacOS, VS Code, Neovim, Git, Github, Asana}
   
   \resumeSubHeadingListEnd
+
 
 % ---
 \end{document}
